@@ -13,7 +13,7 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), AutoInject {
     @Inject lateinit var viewModelFactory: ViewModelProvider.Factory
-    private val model: MainViewModel by viewModel(viewModelFactory)
+    private val model: MainViewModel by viewModel { viewModelFactory }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
