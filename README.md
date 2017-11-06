@@ -1,0 +1,2 @@
+# kotlin_android_arch_dagger_sample
+Kotlin+Android Arch+Dagger2のサンプル
