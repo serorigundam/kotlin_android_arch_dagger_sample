@@ -1,4 +1,4 @@
-package tech.ketc.dagger2naacsample.di
+package tech.ketc.dagger2naacsample.ui.model.factory
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider

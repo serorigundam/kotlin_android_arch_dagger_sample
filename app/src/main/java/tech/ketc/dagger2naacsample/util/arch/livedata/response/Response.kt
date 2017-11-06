@@ -1,4 +1,4 @@
-package tech.ketc.dagger2naacsample.util.arch.response
+package tech.ketc.dagger2naacsample.util.arch.livedata.response
 
 interface Response<out T> {
     val result: T

@@ -1,6 +1,6 @@
-package tech.ketc.dagger2naacsample.util.arch.response.extension.nonnull
+package tech.ketc.dagger2naacsample.util.arch.livedata.response.extension.nonnull
 
-import tech.ketc.dagger2naacsample.util.arch.response.Response
+import tech.ketc.dagger2naacsample.util.arch.livedata.response.Response
 
 fun <T : Any> Response<T>.nullable(): T? = if (isSuccessful) result else null
 

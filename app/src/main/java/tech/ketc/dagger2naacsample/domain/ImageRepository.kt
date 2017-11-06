@@ -13,7 +13,7 @@ class ImageRepository : IImageRepository {
         Log.v(javaClass.name, "getImage()")
         var connection: HttpURLConnection? = null
         var inputStream: InputStream? = null
-        try {
+        return try {
             val url = URL(urlStr)
             connection = url.openConnection()!! as HttpURLConnection
             connection.allowUserInteraction = false
@@ -25,7 +25,7 @@ class ImageRepository : IImageRepository {
                 inputStream = connection.inputStream
                 Thread.sleep(3000)
                 Log.v(javaClass.name, "complete")
-                return BitmapFactory.decodeStream(inputStream)
+                BitmapFactory.decodeStream(inputStream)
             } else {
                 throw  RuntimeException("failed load image : responseCode = $responseCode")
             }

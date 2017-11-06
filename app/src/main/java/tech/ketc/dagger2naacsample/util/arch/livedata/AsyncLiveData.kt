@@ -9,7 +9,7 @@ import kotlinx.coroutines.experimental.Job
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
-import tech.ketc.dagger2naacsample.util.arch.response.Response
+import tech.ketc.dagger2naacsample.util.arch.livedata.response.Response
 
 open class AsyncLiveData<T>(private val func: suspend () -> T)
     : NonnullLiveData<Response<T>>(), Cancellable {

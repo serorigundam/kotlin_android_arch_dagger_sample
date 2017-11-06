@@ -11,7 +11,5 @@ import javax.inject.Singleton
 class RepositoryModule {
     @Singleton
     @Provides
-    fun provideImageRepository(): IImageRepository {
-        return ImageRepository()
-    }
+    fun provideImageRepository(): IImageRepository = ImageRepository()
 }
