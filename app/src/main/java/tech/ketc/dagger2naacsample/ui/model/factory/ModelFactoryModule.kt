@@ -1,16 +1,15 @@
-package tech.ketc.dagger2naacsample.di
+package tech.ketc.dagger2naacsample.ui.model.factory
 
 import tech.ketc.dagger2naacsample.ui.model.di.ViewModelComponent
 import android.arch.lifecycle.ViewModelProvider
 import dagger.Module
 import dagger.Provides
 import tech.ketc.dagger2naacsample.ui.main.MainActivityComponent
-import tech.ketc.dagger2naacsample.ui.model.factory.ViewModelFactory
 import javax.inject.Singleton
 
 
 @Module(subcomponents = arrayOf(MainActivityComponent::class))
-class AppModule {
+class ModelFactoryModule {
 
     @Singleton
     @Provides
